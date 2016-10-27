@@ -11,10 +11,10 @@ router.post('/', function (req, res) {
 
   function isPalindrome(str) {
     var len = str.length
-      , i=0
+      , i = 0
       , result = true;
 
-    if (len <= 1) return true;
+    if (len <= 1) { return true };
 
     if (str.charAt(i) != str.charAt(len - i - 1)) {
       return false;
