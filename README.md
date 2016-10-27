@@ -7,7 +7,7 @@
 ```
 
 ```
-> bower install
+> bower install --allow-root
 ```
 
 ## Usage
