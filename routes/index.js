@@ -10,15 +10,20 @@ router.post('/', function (req, res) {
   var phrase = (req.body.phrase).toLowerCase();
 
   function isPalindrome(str) {
-    var len = str.length;
+    var len = str.length
+      , i=0
+      , result = true;
 
-    for (var i = 0; i < Math.floor(len/2); i++) {
-      if (str[i] !== str[len - 1 - i]) {
-        return false;
-      }
+    if (len <= 1) return true;
+
+    if (str.charAt(i) != str.charAt(len - i - 1)) {
+      return false;
+    } else {
+      i++;
+      isPalindrome(str.substr(1,str.length -2));
     }
 
-    return true;
+    return result;
   }
 
   var test = isPalindrome(phrase);
