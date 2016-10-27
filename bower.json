@@ -1,0 +1,21 @@
+{
+  "name": "palindrome",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Anderson Juhasc <anderson.juhasc@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.8"
+  }
+}

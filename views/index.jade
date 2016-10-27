@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  form(ng-controller='formCtrl', ng-submit='send()')
+    label Word or Phrase:
+    textarea(rows='5', ng-model='phrase', required)
+    button(type='submit') Send
